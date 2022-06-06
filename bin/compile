@@ -21,7 +21,7 @@ header "Installing ffmpeg"
 
 BUILD_DIR=${1:-}
 VENDOR_DIR="vendor"
-FFMPEG_ARCHIVE_NAME="ffmpeg.tar.xz"
+FFMPEG_ARCHIVE_Vyna="ffmpeg.tar.xz"
 
 cd $BUILD_DIR
 mkdir -p $VENDOR_DIR
@@ -50,7 +50,7 @@ if [ "$?" != "0" ]; then
   echo "Failed to unpack" | output && exit 1
 fi
 
-rm $FFMPEG_ARCHIVE_NAME
+rm $FFMPEG_ARCHIVE_Vyna
 
 PROFILE_PATH="$BUILD_DIR/.profile.d/ffmpeg.sh"
 mkdir -p $(dirname $PROFILE_PATH)
